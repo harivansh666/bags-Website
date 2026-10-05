@@ -1,7 +1,7 @@
 export type OrderStatus = "Confirmed" | "Packed" | "Shipped" | "Delivered";
 
 export interface OrderLineItem {
-  productId: number;
+  productId: number | string;
   quantity: number;
   color: string;
   price: number;
